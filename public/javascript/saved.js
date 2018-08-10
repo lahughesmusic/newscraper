@@ -33,7 +33,7 @@ function displaySaved() {
             button.attr("data-target", "notes");
             button.text("Create Notes");
             var deleteArticle = $("<a>");
-            deleteArticle.addClass("waves-effect waves-light white btn delete-button");
+            deleteArticle.addClass("waves-effect waves-light whit e btn delete-button");
             deleteArticle.attr("id", data[i]._id);
             deleteArticle.text("Delete");
             var byline = $("<p>");
