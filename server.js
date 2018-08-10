@@ -21,7 +21,7 @@ app.use(express.static("./public"));
 
 // connect to database
 mongoose.Promise = Promise;
-var dbConnect = process.env.MONGODB_URI || "mongodb://localhost/foxsScrape";
+var dbConnect = process.env.MONGODB_URI || "mongodb://heroku_jz6l0gdq:6mvlbonfvvalgagqv3g4i5p4fh@ds235418.mlab.com:35418/heroku_jz6l0gdq";
 if(process.env.MONGODB_URI) {
     mongoose.connect(process.env.MONGODB_URI)
 } else {
@@ -39,6 +39,8 @@ if(process.env.MONGODB_URI) {
         console.log("Mongoose connection is successful");
     }
 }); */
+
+
 var db = mongoose.connection;
 db.on('error',function(err){
     console.log('Mongoose Error',err);
