@@ -22,3 +22,9 @@ var Note = mongoose.model("Note", NoteSchema);
 
 // Export the Note model
 module.exports = Note;
+
+
+
+// the thing they said was important, keep this
+// URI STRING
+// mongodb://heroku_jz6l0gdq:6mvlbonfvvalgagqv3g4i5p4fh@ds235418.mlab.com:35418/heroku_jz6l0gdq
